@@ -1,7 +1,9 @@
 {
   "description": "Indigo backend interview project",
   "devDependencies": {
-    "csv-parse": "^2.5.0"
+    "async": "^2.6.2",
+    "csv-parse": "^2.5.0",
+    "jest": "^24.7.1"
   },
   "name": "hooli-checker",
   "repository": {
@@ -9,7 +11,9 @@
     "url": "https://github.com/indigo-ag/hooli-checker.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "version": "1.0.0"
 }

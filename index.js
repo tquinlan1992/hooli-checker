@@ -1,8 +1,15 @@
-const fs = require('fs'); // useful for navigating the file system
-const parse = require('csv-parse/lib/sync'); // needed for parsing CSV file data
+const { getMissingIds, writeMissingIdsFile } = require('./missingIds');
 
 function linkBuyerToFacility() {
-  // your solution goes here
+    // your solution goes here
+    getMissingIds({ 
+        existingAccountsPath: './existing-accounts.csv', 
+        samAccountsPath: './sam-accounts.csv' 
+    }, (err, missingIds) => {
+        writeMissingIdsFile({missingIds, filePath: './missingIds.txt'}, (err, result) => {
+             console.log(result);
+          });
+    });
 }
 
 linkBuyerToFacility();
