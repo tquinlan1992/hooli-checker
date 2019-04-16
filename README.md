@@ -1,3 +1,5 @@
+# Thomas Quinlan
+
 # Hooli Checker
 
 Welcome and thanks for stopping by! Today we're going to be working on a real-life project that one of our developers recently encountered. Your mission, if you choose to accept it, is to **find the bad apples and get us a report ASAP**!
